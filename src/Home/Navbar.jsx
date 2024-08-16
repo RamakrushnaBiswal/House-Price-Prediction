@@ -1,4 +1,4 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem,  Button} from "@nextui-org/react";
 import { GiSpookyHouse } from "react-icons/gi";
 export default function NavbarNew() {
   return (
@@ -10,11 +10,13 @@ export default function NavbarNew() {
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="/login">Login</Link>
+          <a href="/login" className="text-primary">Login</a>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="/signup" variant="flat">
+          <Button color="primary" variant="flat">
+          <a href="/signup">
             Sign Up
+            </a>
           </Button>
         </NavbarItem>
       </NavbarContent>
